@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script>
+      // preserva o caminho e o repassa como query string
+      var redirect = '/' + location.search + location.hash;
+      location.replace('/index.html?redirect=' + encodeURIComponent(location.pathname) + redirect);
+    </script>
+  </head>
+  <body></body>
+</html>
